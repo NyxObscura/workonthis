@@ -90,26 +90,49 @@ p {
   }
 }
 /* Tambahan untuk footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #1e1e1e;
-  color: #ccc;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 0.9rem;
-  border-top: 1px solid #444;
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer a.footer-link {
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  text-align: center;
+  animation: slideUp 1.2s ease-out;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #aaa;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-top: 8px;
   color: #f39c12;
   text-decoration: none;
+  transition: color 0.3s ease;
   font-weight: 600;
 }
 
-.footer a.footer-link:hover {
+.footer-link:hover {
+  color: #e67e22;
   text-decoration: underline;
 }
-
-/* ... bagian lain tetap seperti sebelumnya */
