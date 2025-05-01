@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+
+    fetch('https://obscuraworks.com/api/smartsupp')
+      .then(response => response.json())
+      .then(data => {
+        _smartsupp.key = data.key;
+        window.smartsupp || (function(d) {
+          var s, c, o = smartsupp = function() { o._.push(arguments) };
+          o._ = [];
+          s = d.getElementsByTagName('script')[0];
+          c = d.createElement('script');
+          c.type = 'text/javascript';
+          c.charset = 'utf-8';
+          c.async = true;
+          c.src = 'https://www.smartsuppchat.com/loader.js?';
+          s.parentNode.insertBefore(c, s);
+        })(document);
+      })
+      .catch(error => console.error('Error loading Smartsupp:', error));
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern payment portal with various secure and fast payment methods">
+  <meta name="author" content="Obscuraworks, Inc">
+  <title>We're Working On It</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <i class="fas fa-tools icon"></i>
+      <h1>We are currently working on this site</h1>
+      <p>Obscuraworks, Inc is performing scheduled maintenance.<br>Please check back soon.</p>
+      <a href="https://obscuraworks.com" class="button">Go Home</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
